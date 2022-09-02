@@ -1,7 +1,10 @@
 const cache ={};
 const factorial = (num)=>{
-
-    return n*factorial(n-1);
+    if(num <=1 ){
+        return 1;
+    }else{
+        return num * factorial(num-1);
+    }
 }
 
-factorial(35);
+console.log(factorial(5));

@@ -4,10 +4,10 @@ function isPrime(num) {
         return true
     }
     var sqrtnum = Math.floor(Math.sqrt(num));
-    var prime = num != 1;
+    var prime = (num !== 1);
 
     for( var i=2; i < sqrtnum + 1; i++ ) { // sqrtnum+1
-        if(num % i == 0) {
+        if(num % i === 0) {
             prime = false;
             break;
         }
@@ -16,4 +16,4 @@ function isPrime(num) {
     return prime;
 }
 
-isPrime(5);
+isPrime(1);

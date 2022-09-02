@@ -19,4 +19,4 @@ console.log(true);
 
 };
 
-longestPalindrome(121);
+longestPalindrome(1221);
