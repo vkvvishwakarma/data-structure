@@ -1,5 +1,5 @@
 /**
- * @param {number} x
+ * @param {string} x
  * @return {boolean}
  */
 
@@ -7,16 +7,15 @@ var longestPalindrome = function(str) {
 
     var len = str.length;
     var mid = Math.floor(len/2);
-
+    var bflag = true;
     for ( var i = 0; i < mid; i++ ) {
+
         if (str[i] !== str[len - 1 - i]) {
-            console.log(false);
+            bflag = false;
             return false;
         }
     }
-console.log(true);
-    return true;
-
+    return bflag;
 };
 
-longestPalindrome(1221);
+longestPalindrome("1221");

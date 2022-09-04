@@ -16,4 +16,4 @@ function isPrime(num) {
     return prime;
 }
 
-isPrime(1);
+isPrime(2);
