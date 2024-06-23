@@ -1,16 +1,20 @@
-var lengthOfLongestSubstring= function (str){
+var lengthOfLongestSubstring = function (str){
     var leftPointer = 0;
     var longestLength = 0;
     const charMap = new Map();
     for( var rightPointer = 0; rightPointer < str.length-1; rightPointer++ ){
         const currentChar = str[rightPointer];
         const preCharIndex = charMap.get(currentChar);
+        console.log(currentChar);
+        console.log(preCharIndex);
         if(preCharIndex >= leftPointer ){
             leftPointer = preCharIndex + 1;
+            console.log(rightPointer + " time become true"  );
         }
-        charMap.set(currentChar,rightPointer);
-        let curLength = rightPointer - leftPointer+1;
-        longestLength =  Math.max(curLength,longestLength);
+        charMap.set(currentChar, rightPointer);
+        console.log( "values set to map "+ currentChar +"=>"+ rightPointer);
+        let curLength = rightPointer - leftPointer + 1;
+        longestLength =  Math.max(curLength, longestLength);
     }
     console.log(longestLength);
     return longestLength;

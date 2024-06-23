@@ -1,8 +1,8 @@
-function sumOfNumber(num){
+function sumOfNumber( num ){
 
     for(var sum = 0; num > 0;){
-        sum += num %10;
-        num = parseInt(num/10)
+        sum += num % 10;
+        num = parseInt(num / 10)
     }
     return sum;
 }

@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 
-var checkPalindrome = function(str) {
+var checkPalindrome = function( str ) {
 
     var len = str.length;
     var mid = Math.floor(len/2);
@@ -20,4 +20,4 @@ var checkPalindrome = function(str) {
 
 };
 
-checkPalindrome("121");
+checkPalindrome("121121");

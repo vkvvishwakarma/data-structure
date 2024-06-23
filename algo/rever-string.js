@@ -3,12 +3,12 @@
 // }
 
 
-function reversalString(strName){
-    if(!strName|| typeof strName !=="string"){
+function reversalString( strName ){
+    if(!strName || typeof strName !=="string"){
         return "not valid"
     }
     var result = [];
-    for(var i= strName.length-1; i >= 0; i-- ){
+    for(var i = strName.length-1; i >= 0; i-- ){
         result.push(strName[i]);
     }
     console.log(result.join(""))
